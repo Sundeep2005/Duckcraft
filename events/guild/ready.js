@@ -12,5 +12,13 @@ module.exports = {
             client.user.setActivity(activities[i].name, { type: activities[i].type });
             i++;
         }, 5000);
+
+        const status = [ `dnd` ];
+        let j = 0;
+        setInterval(() => {
+            if(j >= status.length) j = 0;
+            client.user.setStatus(status[j]);
+            j++;
+        }, 5000);
     }
 };
