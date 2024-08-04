@@ -1,3 +1,5 @@
 json.sqlite
 config.json
+package-lock.json
+package.json
 node_modules/
